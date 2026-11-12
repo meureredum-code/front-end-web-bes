@@ -1,0 +1,181 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 2rem;
+  background-color: #fff8ef;
+  color: #35251c;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: #b84b16;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  color: #76513b;
+  font-size: 1rem;
+}
+
+/* Títulos */
+h2 {
+  font-size: 1.5rem;
+  color: #8c3514;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  color: #43291d;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Seções */
+section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  border: 1px solid #f0dfce;
+  text-align: center;
+}
+
+.menu {
+  background-color: #ffead5;
+}
+
+/* Menu de navegação */
+.container-cabecario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.container-cabecario a {
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #633219;
+  background-color: #f8d3a9;
+  transition: background-color 0.2s;
+}
+
+.container-cabecario a:hover {
+  background-color: #f4b875;
+}
+
+.container-cabecario .itemLanches {
+  background-color: #e97832;
+  color: #ffffff;
+}
+
+/* Produtos */
+.container-lanches {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fffaf5;
+  padding: 1rem;
+  border: 1px solid #f0dfce;
+  border-radius: 12px;
+}
+
+/* Espaço reservado para as imagens */
+.imagem {
+  width: 200px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3e5d7;
+  border: 2px dashed #d8b99d;
+  border-radius: 8px;
+  color: #98745c;
+  font-size: 0.9rem;
+}
+
+/* Preço */
+.item .preco {
+  color: #b84b16;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 0.3rem;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  color: #76513b;
+  font-size: 0.9rem;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 700px) {
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container-lanches {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+  }
+
+  .item {
+    padding: 0.7rem;
+  }
+
+  .imagem {
+    height: 130px;
+  }
+
+  .container-cabecario {
+    gap: 0.5rem;
+  }
+
+  .container-cabecario a {
+    padding: 0.7rem 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-lanches {
+    grid-template-columns: 1fr;
+  }
+}

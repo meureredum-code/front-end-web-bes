@@ -8,10 +8,10 @@ function executar(evento) {
    erroNome.classList.add("erro");
    erroNome.classList.remove("oculto");
  }  
- 
+
 const idade = document.querySelector("#idade");
 const erroIdade = document.querySelector("#erro-idade");
- 
+
 if (idade.value === "") {
   erroIdade.textContent = "Idade não pode estar vazia!";
   erroIdade.classList.add("erro");
@@ -21,11 +21,11 @@ if (idade.value === "") {
   erroIdade.classList.add("erro");
   erroIdade.classList.remove("oculto");
 }
- 
+
  //TODO: COMO VALIDAR UM E-MAIL UTILIZANDO UM REGEX
  const email = document.querySelector("#email");
 const erroEmail = document.querySelector("#erro-email");
- 
+
 if (email.value === "") {
   erroEmail.textContent = "E-mail não pode estar vazio!";
   erroEmail.classList.add("erro");
@@ -38,7 +38,7 @@ if (email.value === "") {
     erroEmail.classList.remove("oculto");
   }
 }
- 
+
 const termos = document.querySelector("#termos");
 const erroTermos = document.querySelector("#erro-termos");
 if (!termos.checked) {
@@ -46,10 +46,10 @@ if (!termos.checked) {
   erroTermos.classList.add("erro");
   erroTermos.classList.remove("oculto");
 }
- 
+
 const valido = document.querySelectorAll(".erro").length === 0;
 const concluido = document.querySelector("#concluido");
- 
+
 if (!valido) {
   concluido.textContent = "Corrija os erros para prosseguir!";
   concluido.classList.add("erro");
@@ -59,7 +59,7 @@ if (!valido) {
   concluido.classList.add("sucesso");
   concluido.classList.remove("oculto");
 }
- 
+
 function limparErros() {
  document.querySelectorAll(".erro").forEach((elemento) => {
    elemento.classList.remove("erro");
