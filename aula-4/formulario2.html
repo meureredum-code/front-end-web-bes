@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<header>
+<h1>Cotação Property</h1>
+</header>
+
+<main>
+
+    <section>
+<h2>Cadastre o seu curriculo</h2>
+
+<form action="https://postman-echo.com/post" method="post" enctype="multipart/form-data">
+    <p>Preencha o formulario abaixo para se candidatar a vaga: </p>
+
+<fieldset> 
+    <legend>Dados do Segurado</legend>
+    
+    <div>
+    <label for="nome_id">Nome Completo:</label>
+    <input type="text" id="nome_id" name="nome" placeholder="Digite seu nome completo">
+</div>
+
+<div>
+    <label for="email_id">Email:</label>
+    <input type="email" id="email_id" name="email" >
+</div>
+
+<div>
+
+    <label for="telefone_id">Telefone:</label>
+    <input type="tel" id="telefone_id" name="telefone" required>
+</div>
+
+<div>
+    <label for="data_nasc_id">Data de Nascimento:</label>
+    <input type="date" id="data_nasc_id" name="data_nasc" >
+</div>
+
+<fieldset>
+    <legend>Endereço</legend>
+
+    <div>
+        <label for="lagradouro_id">Endereço:</label>
+        <input type="text" id="lagradouro_id" name="lagradouro" >
+    </div>
+    
+
+    <div>
+        <label for="cidade_id">Cidade-UF:</label>
+        <input type="text" id="cidade_id" name="cidade" >
+    </div>
+
+    <div>
+        <label for="numero_id">Número:</label>
+        <input type="number" id="numero_id" name="numero" >
+    </div>
+
+</fieldset>
+</fieldset>
+
+<fieldset>
+    <legend>Dados do Corretor</legend>
+
+   <div>
+    <label for="nome_id">Razão Social:</label>
+    <input type="text" id="nome_id" name="nome" placeholder="Digite a razão social da empresa">
+</div>
+<div>
+    <label for="cn_id">CNPJ:</label>
+    <input type="text" id="cn_id" name="cn" placeholder="Digite o CNPJ da empresa">
+</div>
+<div>
+    <label for="suc_cpd_id">SUC-CPD:</label>
+    <input type="text" id="suc_cpd_id" name="suc_cpd" placeholder="Digite a SUC-CPD">
+</div>
+
+<fieldset>
+    <legend>Endereço corretor</legend>
+
+    <div>
+        <label for="lagradouro_id">Endereço:</label>
+        <input type="text" id="lagradouro_id" name="lagradouro" >
+    </div>
+    
+
+    <div>
+        <label for="cidade_id">Cidade-UF:</label>
+        <input type="text" id="cidade_id" name="cidade" >
+    </div>
+
+    <div>
+        <label for="numero_id">Número:</label>
+        <input type="number" id="numero_id" name="numero" >
+    </div>
+
+</fieldset>
+
+</fieldset>
+
+<fieldset>
+    <legend>Nivel desejado</legend>
+
+    <div>
+        <input id="nivel_estagio_id" name="nivel" type="radio" value="estagio">
+        <label for="nivel_estagio_id">Estágio</label>
+    </div>
+    <div>
+        
+        <input id="nivel_junior_id" name="nivel" type="radio" value="junior">
+        <label for="nivel_junior_id">Junior</label>
+    </div>
+    <div>
+        
+        <input id="nivel_pleno_id" name="nivel" type="radio" value="pleno">
+        <label for="nivel_pleno_id">Pleno</label>
+    </div>
+    <div>
+        
+        <input id="nivel_senior_id" name="nivel" type="radio" value="senior">
+        <label for="nivel_senior_id">Senior</label>
+    </div>
+
+</fieldset>
+
+<fieldset>
+    <legend>Tecnologias que domina:</legend>
+    <div>
+        <input id="tecnologia_html_id" name="tecnologia" type="checkbox" value="html">
+        <label for="tecnologia_html_id">HTML</label>
+    </div>
+    <div>
+        <input id="tecnologia_css_id" name="tecnologia" type="checkbox" value="css">
+        <label for="tecnologia_css_id">CSS</label>
+    </div>
+    <div>
+        <input id="tecnologia_javascript_id" name="tecnologia" type="checkbox" value="javascript">
+        <label for="tecnologia_javascript_id">JavaScript</label>
+    </div>
+
+</fieldset>
+
+<fieldset>
+    <legend>Grau de instrução</legend>
+
+    <div>
+        <label for="escolaridade_id">Escolaridade:</label>
+        <select id="escolaridade_id" name="escolaridade" >
+            <option value="">Selecione</option>
+            <option value="fundamental">Ensino Fundamental</option>
+            <option value="medio">Ensino Médio</option>
+            <option value="superior">Ensino Superior</option>
+            <option value="pos_graduacao">Pós-Graduado(a)</option>
+        </select>
+    </div>
+</fieldset>
+
+<div>
+
+    <button type="submit">Enviar Candidatura</button>
+    <button type="reset">Limpar Dados</button>
+</div>
+</form>
+
+  </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Todos os direitos reservados. Luan Avelaneda</p>
+</footer>
+
+</body>
+</html>
